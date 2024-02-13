@@ -1,0 +1,17 @@
+{
+  "name": "intermediate-azure-static-web-apps",
+  "version": "1.0.0",
+  "description": "---\r page_type: sample\r languages:\r   - javascript\r   - typescript\r products:\r   - azure functions\r description: 'Apps that can be used with as a starting point for some MS Learn Modules.'\r urlFragment: 'https://github.com/MicrosoftDocs/mslearn-staticwebapp'\r ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd angular-app && rimraf node_modules package-lock.json dist && npx npm-check-updates -u && npm install --legacy-peer-deps && npm run start\" \"cd react-app && rimraf node_modules package-lock.json dist && npm install --legacy-peer-deps && npm run start\" \"cd vue-app && rimraf node_modules package-lock.json dist && npm install --legacy-peer-deps && npm run serve\" \"cd svelte-app && rimraf node_modules package-lock.json dist && npm install --legacy-peer-deps && npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
